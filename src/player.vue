@@ -11,7 +11,7 @@
   import _videojs from 'video.js'
   const videojs = window.videojs || _videojs
 
-  // pollfill
+  // polyfill
   if (typeof Object.assign != 'function') {
     Object.defineProperty(Object, 'assign', {
       value(target, varArgs) {
